@@ -5,7 +5,7 @@ import course.*;
 
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
         Course course1 = new Course(new Cross(300), new Wall(2), new Water(5));
 
