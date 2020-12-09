@@ -10,11 +10,11 @@ public class Human implements Competitor {
     protected boolean active;
 
     @Override
-    public boolean isOnDistance() {
+    public boolean isOnDistance(){
         return active;
     }
 
-    public Human(String name) {
+    public Human(String name){
         this.name = name;
         this.maxRunDistance = 10000;
         this.maxJumpHeight = 20;
@@ -23,8 +23,8 @@ public class Human implements Competitor {
     }
 
     @Override
-    public void run(int dist) {
-        if (dist <= maxRunDistance) {
+    public void run(int dist){
+        if (dist <= maxRunDistance){
             System.out.println(name + " отлично справился с кроссом");
         } else {
             System.out.println(name + " не смог справиться с кроссом и сошел с дистанции");
@@ -33,8 +33,8 @@ public class Human implements Competitor {
     }
 
     @Override
-    public void jump(int height) {
-        if (height <= maxJumpHeight) {
+    public void jump(int height){
+        if (height <= maxJumpHeight){
             System.out.println(name + " отлично перепрыгнул через стену");
         } else {
             System.out.println(name + " не смог перепрыгнуть через стену и сошел с дистанции");
@@ -43,8 +43,8 @@ public class Human implements Competitor {
     }
 
     @Override
-    public void swim(int dist) {
-        if (dist <= maxSwimDistance) {
+    public void swim(int dist){
+        if (dist <= maxSwimDistance){
             System.out.println(name + " отлично проплыл");
         } else {
             System.out.println(name + " не смог справиться с заплывом и сошел с дистанции");
@@ -53,7 +53,7 @@ public class Human implements Competitor {
     }
 
     @Override
-    public void result() {
+    public void result(){
         System.out.println("Human " + name + ": " + active);
     }
 }

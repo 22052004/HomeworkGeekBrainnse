@@ -1,6 +1,6 @@
 package competitors;
 
-public interface Competitor {
+public interface Competitor{
     void run(int dist);
 
     void swim(int dist);
